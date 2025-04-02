@@ -55,7 +55,7 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="io.jpg" alt="Foto Profilo" class="profile-pic">
+            <img src="Io.JPG" alt="Foto Profilo" class="profile-pic">
             <div>
                 <h1>FEDERICO BIANCONI</h1>
                 <p>Ingegnere Navale</p>
@@ -65,7 +65,7 @@
     <section>
         <h2>Chi Sono</h2>
         <p>Sono un ingegnere navale con una grande passione per la progettazione e lo sviluppo di soluzioni innovative. Amo affrontare nuove sfide e migliorarmi costantemente.</p>
-        <a href="CV.pdf" class="button">Scarica il mio CV</a>
+        <a href="Curriculum_Vitae_OMC.pdf" class="button">Scarica il mio CV</a>
     </section>
     <section>
         <h2>Contatti</h2>
