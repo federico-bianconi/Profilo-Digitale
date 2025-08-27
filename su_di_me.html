@@ -85,21 +85,43 @@
   header {
     flex-direction: column;
     height: auto;
-    padding: 0px 10px;
+    padding: 6px 10px;
     text-align: center;
   }
 
   .header-content {
     flex-direction: column;
     align-items: center;
-    gap: 1px;
-    margin-bottom: 2px;
+    gap: 4px;
+    margin-bottom: 4px;
   }
+ .profile-pic {
+    width: 160px;
+    height: 160px;
+      margin-top: 12px; 
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+
+        h1 { /* Contollo font NOME*/
+  font-size: 30px;
+  margin: 4px 0;
+}
+
+p { /* controllo font professione*/
+  font-size: 18px;
+  margin: 2px 0;
+}
+            .button {
+                margin-top: 4px;
+                padding: 8px 16px;
+                font-size: 14px;
+            }
 
   nav {
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1px;
+    margin-top: 4px;
     margin-bottom: 0;
   }
 
@@ -113,17 +135,20 @@
     padding: 14px;
     padding-bottom: 140px;
   }
+            
+  section:nth-of-type(1) {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
 
-  .profile-pic {
-    width: 160px;
-    height: 160px;
-      margin-top: 15px; 
-    margin-right: 0;
-    margin-bottom: 2px;
-  }
-            footer {
+  section:nth-of-type(2) {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+    footer {
   padding: 6px 0;
-  font-size: 12px;
+  font-size: 6px;
 }
 }
     </style>
