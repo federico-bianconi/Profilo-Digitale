@@ -81,7 +81,7 @@
             z-index: 1000;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 600px) { /* controllo smartphone */
   header {
     flex-direction: column;
     height: auto;
@@ -133,7 +133,7 @@ p { /* controllo font professione*/
 
   section {
     padding: 14px;
-    padding-bottom: 120px;
+    padding-bottom: 240px;
   }
             
   section:nth-of-type(1) {
@@ -151,9 +151,13 @@ p { /* controllo font professione*/
 }
 
     footer {
-        position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   padding: 20px 0;
   font-size: 12px;
+  z-index: 1000;
 }
         footer p { /* font a pie pagina */
   font-size: 14px; 
