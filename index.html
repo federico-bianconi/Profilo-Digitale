@@ -9,7 +9,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding-top: 70px; /* spazio per il nav fisso */
             min-height: 100vh;
             overflow-y: auto;
         }
@@ -40,10 +40,15 @@
         }
 
         nav {
+            position: fixed;
+            top: 0;
+            right: 0;
             display: flex;
             gap: 20px;
-            align-items: flex-end;
-            height: 100%;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(180deg, #0073e6 0%, #00aaff 100%);
+            z-index: 2000;
         }
 
         nav a {
@@ -55,7 +60,6 @@
             border-radius: 8px;
             background-color: rgba(255, 255, 255, 0.1);
             transition: background 0.3s, transform 0.2s;
-            margin-bottom: 10px;
         }
 
         nav a:hover {
@@ -68,10 +72,6 @@
             max-width: 800px;
             margin: auto;
             text-align: center;
-        }
-
-        section:nth-of-type(1) {
-            margin-bottom: 20px;
         }
 
         .button {
@@ -97,20 +97,6 @@
         }
 
         @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                height: 300px;
-                padding: 6px 10px;
-                text-align: center;
-            }
-
-            .header-content {
-                flex-direction: column;
-                align-items: center;
-                gap: 4px;
-                margin-bottom: 4px;
-            }
-
             .profile-pic {
                 width: 160px;
                 height: 160px;
@@ -128,53 +114,20 @@
                 margin: 0 0 8px 0;
             }
 
-            .button {
-                margin-top: 10px;
-                padding: 8px 16px;
-                font-size: 14px;
-            }
-
-            .fixed-buttons {
-    bottom: 60px;
-    flex-wrap: wrap;
-    padding: 0 10px;
-}
-
             nav {
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: auto;
-    margin-bottom: 10px;
-}
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 8px;
+            }
 
             nav a {
-                margin-bottom: 1px;
-                padding: 5px 10px;
                 font-size: 14px;
-            }
-
-            section {
-                padding: 8px;
-                padding-bottom: 10px;
-            }
-
-            section:nth-of-type(1) {
-                margin-bottom: 0px;
+                padding: 6px 12px;
             }
 
             footer {
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                width: 100%;
                 padding: 10px 0;
                 font-size: 10px;
-                z-index: 1000;
-            }
-
-            footer p {
-                margin: 0;
-                font-size: 12px;
             }
         }
     </style>
@@ -189,11 +142,12 @@
                 <p>Ingegnere Navale</p>
             </div>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="su_di_me.html">Su di me</a>
-        </nav>
     </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="su_di_me.html">Su di me</a>
+    </nav>
 
     <section>
         <h2>CHI SONO</h2>
