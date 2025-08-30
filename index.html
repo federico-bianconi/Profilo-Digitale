@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="it">
 
 <head>
@@ -99,8 +99,9 @@
         @media (max-width: 600px) {
             header {
                 flex-direction: column;
-                height: 300px;
-                padding: 6px 10px;
+                align-items: stretch;
+                height: auto;
+                padding: 10px 16px;
                 text-align: center;
             }
 
@@ -135,22 +136,27 @@
             }
 
             .fixed-buttons {
-    bottom: 60px;
-    flex-wrap: wrap;
-    padding: 0 10px;
-}
+                bottom: 60px;
+                flex-wrap: wrap;
+                padding: 0 10px;
+            }
 
             nav {
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: auto;
-    margin-bottom: 10px;
-}
+                display: flex;
+                justify-content: flex-end;
+                /* allinea a destra */
+                gap: 10px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                padding-right: 10px;
+                /* margine destro coerente */
+            }
 
             nav a {
-                margin-bottom: 1px;
-                padding: 5px 10px;
                 font-size: 14px;
+                padding: 6px 12px;
+                margin: 0;
+                text-decoration: none;
             }
 
             section {
